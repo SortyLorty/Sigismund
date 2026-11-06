@@ -1,5 +1,5 @@
 // Scheda di Sigismund offline. A ogni aggiornamento cambia VERSION (es. sigismund-v2).
-const VERSION="sigismund-v1";
+const VERSION="sigismund-v2";
 const FONT_CSS="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap";
 const CORE=["./","./index.html","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./icons/apple-touch-icon.png","./icons/favicon.png"];
 self.addEventListener("install",e=>{e.waitUntil((async()=>{const c=await caches.open(VERSION);await c.addAll(CORE);
